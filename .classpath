@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="libs/JOML/joml-1.6.1-20150920.093049-3.jar" sourcepath="res/JOML-master"/>
+	<classpathentry kind="lib" path="libs/LWJGL/jar/lwjgl.jar" sourcepath="libs/LWJGL/jar/src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/CGA-Praktikum/libs/LWJGL/doc/javadoc.zip!/"/>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="CGA-Praktikum/libs/LWJGL/native"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
