@@ -16,6 +16,7 @@ import static org.lwjgl.glfw.GLFW.GLFW_KEY_A;
 import static org.lwjgl.glfw.GLFW.GLFW_KEY_D;
 import static org.lwjgl.glfw.GLFW.GLFW_KEY_ESCAPE;
 import static org.lwjgl.glfw.GLFW.GLFW_KEY_M;
+import static org.lwjgl.glfw.GLFW.GLFW_KEY_PAGE_DOWN;
 import static org.lwjgl.glfw.GLFW.GLFW_KEY_R;
 import static org.lwjgl.glfw.GLFW.GLFW_KEY_S;
 import static org.lwjgl.glfw.GLFW.GLFW_KEY_W;
@@ -194,6 +195,9 @@ public class DisplayManager {
                     renderer.switchLight(7);
                 if (key == GLFW_KEY_M && action == GLFW_PRESS){
                 	renderer.changeMaterial();
+                }
+                if (key == GLFW_KEY_PAGE_DOWN && action == GLFW_PRESS){
+                	renderer.openConfig();
                 }
 
 

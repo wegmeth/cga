@@ -44,6 +44,12 @@ public class Renderer {
 
 	public RenderState renderState;
 
+
+	public void setMaterial(Material m) {
+		this.material=m;
+	}
+
+
 	public Renderer(Camera camera, ArrayList<PointLight> lights,
 			Material material) {
 		// set OpenGL parameters for rendering
@@ -232,6 +238,6 @@ public class Renderer {
 	}
 
 	public void openConfig() {
-		new Configurator(this.material);
+		new Configurator(this.material,this);
 	}
 }
