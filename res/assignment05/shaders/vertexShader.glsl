@@ -39,7 +39,7 @@ void main(void){
 	int i=0;
 	
 	//Formel!! Me + Ma + La + schleifeAusI(Ma * La,i + Md * cos a * Ld,i + Ms * cos^k beta * Ls,i)
-	while(i<5){
+	while(i<8){
 		AmbientEmissiveTerm[i] = matAmbient * lightColAmbient[i];
 		DiffuseTerm[i] = matDiffuse * lightColDiffuse[i];
 		SpecularTerm[i] = matSpecular * lightColSpecular[i];	
@@ -48,8 +48,5 @@ void main(void){
 		LightDir[i] = ((projectionMatrix * lp) - P).xyz;
 		i++;	
 	}
-
-	
-	
 	EyeDir = -P.xyz;
 }

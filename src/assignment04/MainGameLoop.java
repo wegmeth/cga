@@ -4,20 +4,24 @@
  */
 package assignment04;
 
+import static org.lwjgl.glfw.GLFW.glfwWindowShouldClose;
+import static org.lwjgl.opengl.GL11.GL_COLOR_BUFFER_BIT;
+import static org.lwjgl.opengl.GL11.GL_DEPTH_BUFFER_BIT;
+import static org.lwjgl.opengl.GL11.GL_FALSE;
+import static org.lwjgl.opengl.GL11.glClear;
+
+import java.util.ArrayList;
+
+import org.lwjgl.glfw.GLFWErrorCallback;
+import org.lwjgl.glfw.GLFWKeyCallback;
+import org.lwjgl.system.libffi.Closure;
+
+import assignment04.entities.Camera;
 import assignment04.entities.Entity;
 import assignment04.renderEngine.DisplayManager;
 import assignment04.renderEngine.Loader;
 import assignment04.renderEngine.Renderer;
 import assignment04.shaders.StaticShaderProgram;
-import assignment04.entities.Camera;
-import org.lwjgl.glfw.GLFWErrorCallback;
-import org.lwjgl.glfw.GLFWKeyCallback;
-import org.lwjgl.system.libffi.Closure;
-
-import java.util.ArrayList;
-
-import static org.lwjgl.glfw.GLFW.glfwWindowShouldClose;
-import static org.lwjgl.opengl.GL11.*;
 
 public class MainGameLoop {
 

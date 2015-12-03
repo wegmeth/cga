@@ -175,7 +175,7 @@ public class Renderer {
 		// rotieren
 		for (PointLight p : lights) {
 			Matrix3f rot = new Matrix3f();
-			rot.rotateY(0.05f);
+			rot.rotateY((float) Math.toRadians(20));
 			p.setLightPos(p.getLightPos().mul(rot));
 		}
 	}

@@ -83,7 +83,6 @@ public class Configurator extends JFrame {
 				@Override
 				public void stateChanged(ChangeEvent arg0) {
 					Configurator.this.matChange();
-					System.out.println(Configurator.this.getBounds());
 				}
 			});
 			this.z.addChangeListener(new ChangeListener() {

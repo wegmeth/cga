@@ -38,7 +38,7 @@ void main(void){
 
 //Formel!! Me + Ma + La + schleifeAusI(Ma * La,i + Md * cos a * Ld,i + Ms * cos^k beta * Ls,i)
 	color = vec4(matEmissionAmbientTerm,1.0);
-	while(i<5){
+	while(i<8){
 		vec3 L = normalize(LightDir[i]);
 	    vec3 H = normalize (V+L);
 
